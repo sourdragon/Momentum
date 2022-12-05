@@ -1,0 +1,91 @@
+:root{
+    --font-1 : 'Nunito';
+    --font-2 : 'PT Sans';
+}
+#greeting{
+    position: absolute;
+    min-width: 100px;
+    min-height: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    
+}
+#greeting > *{
+    align-self : center;
+    font-family: var(--font-1)
+}
+#focus-input{
+
+        width: 100%;
+        padding: var(--input-padding);
+        display: block;
+        background: 0;
+        border: 0;
+        border-bottom: 2px solid rgb(236, 156, 156);
+        font-size: 2.25em;
+        line-height: 1.2;
+        font-weight: 500;
+        outline: none;
+        text-align: center;
+        transition: border-color .2s ease;
+    
+}
+#focus-checkbox{
+    opacity : 0;
+    height : 16px;
+    width : 16px;
+    border:  0px 10px;
+    border : 1px solid black;
+    border-radius : 20%;
+}
+
+#aim{
+    width: 60%;
+    margin: 0 20%;
+    min-width: 100px;
+    display: flex;
+    flex-direction: row;
+}
+#aim>*{
+    margin: 0 10px;
+}
+#footer{
+    display: flex;
+    align-content: center;
+    flex-direction: rows;
+    justify-content: space-between; 
+    align-self: flex-end;  
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+    padding-bottom: 15px;
+}
+.fa{
+    opacity: 0;
+}
+#bgoptions{
+    font-family: var(--font-1);
+    color:white;
+    align-self : flex-end;
+}
+#time{
+    font-size : 9rem;
+}
+#quote{
+    color: white;
+    margin-right: 35%;
+    max-width: 500px;
+    font-family: var(--font-2);
+    font-weight :bolder;
+    font-size: 20px;
+    text-align: center;
+}
+*{
+    caret-color: rgba(0,0,0,0);
+}
