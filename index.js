@@ -455,6 +455,7 @@ function setQuote(){
     
   }
     $('#quote').text(localStorage.getItem('quote'))
+    console.log("the js ran")
 }
 
 setQuote();
